@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="75dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewMid"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        app:cardBackgroundColor="@color/teal_700"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/profile"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/male_profile_foreground"
+        app:layout_constraintBottom_toBottomOf="@+id/cardViewMid"
+        app:layout_constraintEnd_toEndOf="@+id/cardViewMid"
+        app:layout_constraintStart_toStartOf="@+id/cardViewMid"
+        app:layout_constraintTop_toTopOf="@+id/cardViewMid" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/paul_imoke"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+       android:layout_marginStart="14dp"
+        app:layout_constraintStart_toEndOf="@id/cardViewMid"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/menu_nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home" />
+
+    <group >
+        <item
+            android:id="@+id/menu_nav_collections"
+            android:icon="@drawable/ic_analytics"
+            android:title="@string/new_collections" />
+
+        <item
+            android:id="@+id/menu_nav_editors_pick"
+            android:icon="@drawable/ic_card"
+            android:title="@string/editor_s_pick" />
+
+    </group>
+
+    <item android:title="@string/app_name">
+
+        <menu>
+            <item
+                android:id="@+id/menu_nav_collections_2"
+                android:icon="@drawable/ic_analytics"
+                android:title="@string/new_collections" />
+
+            <item
+                android:id="@+id/menu_nav_editors_pick_2"
+                android:icon="@drawable/ic_card"
+                android:title="@string/editor_s_pick" />
+
+        </menu>
+    </item>
+
+</menu>
